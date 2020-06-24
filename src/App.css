@@ -12,6 +12,10 @@
   display: flex;
   justify-content: center;
 }
+.Row_CentradoI{
+  display: flex;
+  justify-content: center;
+}
 
 .Row_Encabezado {
   display: flex;
@@ -82,10 +86,11 @@ h3 {
 @media only screen and (max-width: 768px) {
 
   h1 {
-    margin-top: 15VH;
+    margin-top: 12VH;
     font-size: 50px;
     display: flex;
     text-align: center;
+    margin-left: 10%;
   }
 
   h2 {
@@ -119,20 +124,40 @@ h3 {
   .Busqueda_barra {
     font-size: 18px;
     padding: 15px;
-    width: 40%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 5%;
   }
 
   .Boton_busqueda {
-    font-size: 25px;
+    font-size: 22px;
     background-color: red;
     color: white;
     border-style: solid;
     border-color: red;
-    margin-left: 2px;
+    margin-left: 35%;
+    margin-top: 3%;
+    border-radius: 3%;
+    width: 30%;
+  }
+  .Row_Centrado {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .texto_Decorativo{
+    display: flex;
+    justify-content: center;
+    margin-left:25% ;
+  }
+  .Imagen1{
+    margin-top: -30%;
   }
 }
 
-/*-----------------------------------------------------------------para tablets --------------------------------*/
+/*-----------------------------------------------------------------para smartphone --------------------------------*/
 @media only screen and (max-width: 767px) {
 
   h1 {
@@ -140,6 +165,7 @@ h3 {
     font-size: 30px;
     display: flex;
     text-align: center;
+    margin-left: 4px;
   }
 
   h2 {
@@ -171,22 +197,58 @@ h3 {
   }
 
   .Busqueda_barra {
-    font-size: 15px;
-    padding: 10px;
-    width: 50%;
+    font-size: 18px;
+    padding: 15px;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 3%;
   }
 
   .Boton_busqueda {
-    font-size: 11px;
+    font-size: 14px;
     background-color: red;
     color: white;
     border-style: solid;
     border-color: red;
-    margin-left: 2px;
-    width: 35%;
-    font-weight: bold;
+    margin-left: 30%;
+    margin-top: 5%;
+    border-radius: 3%;
+    width: 40%;
+  }
+  .Row_Centrado {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .Row_CentradoI{
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .texto_Decorativo{
+    display: flex;
+    justify-content: center;
+    margin-left:-35%;
+    margin-top: 5%;
+  }
+  .Imagen1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -55%;
+    margin-top: -25%;
+    width: 300px;
+  }
+  .texto_Decorativo2{
+    display: flex;
+    justify-content: center;
+    margin-left:-10%;
+    margin-top: 5%;
   }
 }
+
 /*.App-link {
   color: #61dafb;
 }
@@ -268,4 +330,61 @@ nav a:hover::before {
 .IconosNav {
   color: #9a1f40;
   font-size: 30px;
+}
+
+/* ------------------------------------- Caracteristicas--------------------------------------------------*/
+.Caracteristicas {
+  background-color: #000000;
+  margin-top: 10px;
+}
+
+.imagen_gif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15vh;
+}
+.Imagen2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:40%;
+  height: 70%;
+}
+.Imagen3{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.Texto_Decorativo {
+  display: flex;
+  justify-content: start;
+  text-align: start;
+}
+.texo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+}
+
+.Boton_Descargar{
+  font-size: 18px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #888888;
+  background-color: #000000;
+  color:#ffffff;
+  width: 30%;
+  padding: 10px;
+  letter-spacing: 3px;
+  border-radius: 20PX;
+  margin-left: -25%;
+  margin-top: 35%;
+}
+.IconSpin{
+  font-size: 32px;
+  color: #3797a4;
 }
